@@ -1,0 +1,4 @@
+To interact with database:
+    navigate to directory containing database
+    type: sqlite3 <database>.db
+    command prompt changes
