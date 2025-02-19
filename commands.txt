@@ -5,3 +5,14 @@ To interact with database:
     type sql queries as normal
     to exit:
         ctrl + c and then Enter
+
+Get rows:
+    SELECT * FROM "<tablename>;
+    SELECT "<column>", "<column>" FROM "<tablename>";
+
+Get first rows:
+    SELECT "title" FROM "longlist" LIMIT 5;
+        returns first 5 rows
+
+Get rows with criteria:
+    SELECT "title", "author" FROM "longlist" WHERE "year" = 2023;
