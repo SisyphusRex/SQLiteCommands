@@ -22,5 +22,10 @@ LIMIT:
     SELECT "title" FROM "longlist" LIMIT 10;
     retrieves first 10 entries
 
+NOT:
+    SELECT "title", "format" FROM "longlist" WHERE "format" != 'hardcover';
+        is equal to:
+            SELECT "title", "format" FROM "longlist" WHERE NOT "format" = 'hardcover';
+
 Operators:
     != is <>
