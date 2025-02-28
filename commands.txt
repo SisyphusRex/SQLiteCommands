@@ -29,3 +29,7 @@ NOT:
 
 Operators:
     != is <>
+
+To split query over multiple lines in terminal:
+    At end of line, hit Enter
+    at end of query, type ';' and Enter
