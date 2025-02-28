@@ -8,6 +8,17 @@ To interact with database:
         OR
         .quit
 
+Write Queries in Document
+    create <docname>.sql
+    put sql query in doc
+Run query from doc:
+    run sqlite3 <database>.db
+    .read <docname>.sql
+
+Run Query from doc and Save to file:
+    int terminal:
+        cat <docname>.sql | sqlite3 <database>.db > <outputfilename>.txt
+
 Get rows:
     SELECT * FROM "<tablename>;
     SELECT "<column>", "<column>" FROM "<tablename>";
