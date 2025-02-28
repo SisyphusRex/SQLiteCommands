@@ -16,3 +16,7 @@ Get first rows:
 
 Get rows with criteria:
     SELECT "title", "author" FROM "longlist" WHERE "year" = 2023;
+
+LIMIT:
+    SELECT "title" FROM "longlist" LIMIT 10;
+    retrieves first 10 entries
