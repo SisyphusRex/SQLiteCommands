@@ -29,6 +29,10 @@ NOT:
 
 Operators:
     != is <>
+    %...% looks for match in middle of string
+    ...% looks for match in beginning of string
+    %... looks for match at end
+    _
 
 To split query over multiple lines in terminal:
     At end of line, hit Enter
@@ -38,3 +42,19 @@ OR
     SELECT "title" FROM "longlist" WHERE ("year" = 2023 OR "year" = 2022);
 AND
     SELECT "title", "author" FROM "longlist" WHERE "year" = 2023 AND "format" = 'hardcover';
+
+NULL:
+    doesn't exist , IS NULL, IS NOT NULL
+    SELECT "title", "translator" FROM "longlist" WHERE "translator" IS NULL;
+
+LIKE:
+    pattern matching
+    SELECT "title" FROM "longlist" WHERE "title" LIKE '%love%';
+
+Conventions:
+    SQL Commands are Capitalized
+        SELECT FROM NOT
+    Attributes in double quotes
+        "title", "longlist"
+    Strings in single quotes
+        'The%'
