@@ -21,3 +21,6 @@ Get rows with criteria:
 LIMIT:
     SELECT "title" FROM "longlist" LIMIT 10;
     retrieves first 10 entries
+
+Operators:
+    != is <>
