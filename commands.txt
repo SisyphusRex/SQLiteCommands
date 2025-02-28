@@ -32,7 +32,7 @@ Operators:
     %...% looks for match in middle of string
     ...% looks for match in beginning of string
     %... looks for match at end
-    _
+    _ match single missing character
 
 To split query over multiple lines in terminal:
     At end of line, hit Enter
@@ -50,6 +50,7 @@ NULL:
 LIKE:
     pattern matching
     SELECT "title" FROM "longlist" WHERE "title" LIKE '%love%';
+    SELECT "title" FROM "longlist" WHERE "title" LIKE 'p_re';
 
 Conventions:
     SQL Commands are Capitalized
