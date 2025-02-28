@@ -33,3 +33,8 @@ Operators:
 To split query over multiple lines in terminal:
     At end of line, hit Enter
     at end of query, type ';' and Enter
+
+OR
+    SELECT "title" FROM "longlist" WHERE ("year" = 2023 OR "year" = 2022);
+AND
+    SELECT "title", "author" FROM "longlist" WHERE "year" = 2023 AND "format" = 'hardcover';
