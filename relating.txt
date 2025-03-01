@@ -9,3 +9,15 @@ Entity Relationship Diagram
 
 Primary Key
   unique identifier such as ISBN for books
+  but ISBN takes up space
+  create ID of unique numbers
+Foreign Key
+  take primary key of one table and use inside of another table
+
+Join Table
+  Author Table
+    PK: author_id
+  Books Table
+    PK: book_id
+  Authored Table
+    author_id TO book_id
