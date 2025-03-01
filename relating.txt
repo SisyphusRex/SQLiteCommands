@@ -1,0 +1,11 @@
+Find out about database, show tables:
+  sqlite3 <database>.db
+  .tables
+
+Entity Relationship Diagram
+  Zero ---O-
+  One  ---|-
+  Many ---E
+
+Primary Key
+  unique identifier such as ISBN for books
