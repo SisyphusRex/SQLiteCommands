@@ -12,6 +12,9 @@ Find out about database, show tables:
   sqlite3 <database>.db
   .tables
 
+Show table column titles:
+    PRAGMA table_info("<tablename>");
+
 Keywords:
     SELECT, FROM, ON ...
     always capitalized
