@@ -1,6 +1,4 @@
-Find out about database, show tables:
-  sqlite3 <database>.db
-  .tables
+
 
 Entity Relationship Diagram
   Zero ---O-
@@ -25,3 +23,10 @@ Join Table
 SubQuery:
   SELECT "title" FROM "books" WHERE "publisher_id = (
     SELECT "id" FROM "publishers" WHERE "publisher" = 'Fitzcarraldo Editions');
+
+IN
+  see if value is in set of values
+  SELECT "title" FROM "books" WHERE "id" IN (...
+
+JOIN
+  join separate tables with common keys
