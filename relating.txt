@@ -21,3 +21,7 @@ Join Table
     PK: book_id
   Authored Table
     author_id TO book_id
+
+SubQuery:
+  SELECT "title" FROM "books" WHERE "publisher_id = (
+    SELECT "id" FROM "publishers" WHERE "publisher" = 'Fitzcarraldo Editions');
