@@ -47,3 +47,9 @@ NATURAL JOIN:
 INTERSECT, UNION, EXCEPT
   SELECT "name" FROM "translators" UNION SELECT "name" FROM "authors";
   compare two different queries
+
+GROUP BY
+  creates groups based on parameter/id
+  SELECT "book_id", AVG("rating") FROM "ratings" GROUP BY "book_id";
+HAVING
+  like WHERE but for groups
