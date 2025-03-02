@@ -28,5 +28,22 @@ IN
   see if value is in set of values
   SELECT "title" FROM "books" WHERE "id" IN (...
 
-JOIN
+(INNER) JOIN
   join separate tables with common keys
+  SELECT * FROM "sea_lions" JOIN "migrations" ON "migrations"."id" = "sea_lions"."id";
+  primary table joined with secondary table matching which column of each as equal
+OUTER JOIN:
+  lets you keep some data if not all keys in both tables
+  LEFT JOIN
+    keeps rows from first table in JOIN command
+  RIGHT JOIN
+    second table
+  FULL JOIN
+    all rows
+NATURAL JOIN:
+  looks for columns with same name and joins by them
+  SELECT * FROM "sea_lions" NATURAL JOIN "migrations";
+
+INTERSECT, UNION, EXCEPT
+  SELECT "name" FROM "translators" UNION SELECT "name" FROM "authors";
+  compare two different queries
