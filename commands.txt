@@ -8,6 +8,11 @@ To interact with database:
         OR
         .quit
 
+Show Table Headers:
+    .headers on
+Display in Columns
+    .mode columns
+
 Find out about database, show tables:
   sqlite3 <database>.db
   .tables
