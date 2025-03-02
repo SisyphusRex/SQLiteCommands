@@ -8,6 +8,30 @@ To interact with database:
         OR
         .quit
 
+Find out about database, show tables:
+  sqlite3 <database>.db
+  .tables
+
+Keywords:
+    SELECT, FROM, ON ...
+    always capitalized
+
+Tables:
+    "author", "id"
+    in double quotes
+
+Strings:
+    'Yeetus'
+    single quotes
+
+Numbers:
+    6
+    no quotes
+
+SubQueries:
+    ()
+    insided parentheses
+
 Write Queries in Document
     create <docname>.sql
     put sql query in doc
