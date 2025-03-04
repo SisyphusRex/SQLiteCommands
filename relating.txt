@@ -53,3 +53,7 @@ GROUP BY
   SELECT "book_id", AVG("rating") FROM "ratings" GROUP BY "book_id";
 HAVING
   like WHERE but for groups
+
+SUM
+  return sum of all fields in a column of a table
+  SELECT SUM(column_name) FROM "table_name"
