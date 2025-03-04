@@ -26,7 +26,7 @@ SubQuery:
 
 IN
   see if value is in set of values
-  SELECT "title" FROM "books" WHERE "id" IN (...
+  SELECT "title" FROM "books" WHERE "id" IN (id1, id2, ...)
 
 (INNER) JOIN
   join separate tables with common keys
