@@ -86,6 +86,9 @@ Operators:
     >= greater than or equal
     <= less than or equal
 
+Arithmetic Operators
+    +, -, /, *, %
+
 To split query over multiple lines in terminal:
     At end of line, hit Enter
     at end of query, type ';' and Enter
