@@ -65,3 +65,8 @@ JOIN Three Tables
   JOIN "performances" ON "performances"."player_id" = "salaries"."player_id"
   WHERE "salaries"."year" = "performances"."year"  <--------IMPORTANT TO STOP DUPLICATION
   ORDER BY "players"."id";
+
+WITH
+  create temporary table or result set
+  WITH "temp1" as ( SELECT "table1"."id", "table2"."rank" FROM "table1" JOIN ...)
+  now you can use "temp1" table in future queries
