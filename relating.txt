@@ -57,3 +57,11 @@ HAVING
 SUM
   return sum of all fields in a column of a table
   SELECT SUM(column_name) FROM "table_name"
+
+JOIN Three Tables
+  SELECT "players"."first_name", "players"."last_name", "salaries"."salary", "salaries"."year"
+  FROM "players"
+  JOIN "salaries" ON "salaries"."player_id" = "players"."id"
+  JOIN "performances" ON "performances"."player_id" = "salaries"."player_id"
+  WHERE "salaries"."year" = "performances"."year"  <--------IMPORTANT TO STOP DUPLICATION
+  ORDER BY "players"."id";
