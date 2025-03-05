@@ -32,6 +32,9 @@ IN
   join separate tables with common keys
   SELECT * FROM "sea_lions" JOIN "migrations" ON "migrations"."id" = "sea_lions"."id";
   primary table joined with secondary table matching which column of each as equal
+
+  SELECT * FROM "sea_lions" JOIN "migrations" ON "migrations"."id" = "sea_lions"."id" AND "migrations"."year" = "sea_lions"."year"
+
 OUTER JOIN:
   lets you keep some data if not all keys in both tables
   LEFT JOIN
