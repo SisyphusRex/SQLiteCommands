@@ -23,6 +23,10 @@ Find out about database, show tables:
 Show table column titles:
     PRAGMA table_info("<tablename>");
 
+Show Schema
+    sqlite3 <database>.db
+    .schema
+
 Keywords:
     SELECT, FROM, ON ...
     always capitalized
