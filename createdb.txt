@@ -1,0 +1,7 @@
+To create a database:
+  1. sqlite3 <database>.db
+  2. Add table
+    1. CREATE TABLE "<tablename>" (
+           "<column1>",
+           "<column2>"
+      );
