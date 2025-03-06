@@ -5,3 +5,4 @@ To create a database:
            "<column1>",
            "<column2>"
       );
+    * by convention, four spaces before each column name
