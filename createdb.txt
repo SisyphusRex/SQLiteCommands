@@ -3,7 +3,7 @@ To create a database:
   2. Add table
     1. CREATE TABLE "<tablename>" (
            "<column1>" <AFFINITY>,
-           "<column2>" <AFFINITY>,
+           "<column2>" <AFFINITY> <COLUMNCONSTRAINT>,
            PRIMARY KEY("<column1>"),
            FOREIGN KEY("<column2>") REFERENCES "<table2>"("pk"),
       );
@@ -37,6 +37,7 @@ Table Constraint:
   * some values must be a certain type or condition
   * Types 
     1. PRIMARY KEY
+      * automatically applies column constraints like NOT NULL (as does foreign key)
     2. FOREIGN KEY
 
 Joint Primary Key:
@@ -45,3 +46,10 @@ Joint Primary Key:
 "row_id"
   * SQLite creates a hidden primary key called "row_id", 
   * can be queried
+
+Column Constraint:
+  CHECK: check to be sure
+  DEFAULT: use default value
+  NOT NULL: value is required
+  UNIQUE: every row is unique value
+  
