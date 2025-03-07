@@ -6,3 +6,19 @@ To create a database:
            "<column2>"
       );
     * by convention, four spaces before each column name
+
+SQLite3 Storage Classes:
+    NULL empty value
+    INTEGER whole number
+    REAL decimals
+    TEXT characters
+    BLOB binary large object, data exactly as I give it
+    * the storage classes hold data types
+
+Type Affinities:
+    * columns will try to convert inserted value to affinity of column
+    TEXT
+    NUMERIC
+    INTEGER
+    REAL
+    BLOB
