@@ -20,7 +20,8 @@ SQLite3 Storage Classes:
 Type Affinities:
     * columns will try to convert inserted value to affinity of column
     TEXT
-    NUMERIC
+    NUMERIC:
+      * integers or real numbers
     INTEGER
     REAL
     BLOB
@@ -49,7 +50,14 @@ Joint Primary Key:
 
 Column Constraint:
   CHECK: check to be sure
+    * "amount" NUMERIC NOT NULL CHECK("amount" <> 0),
+    * "type" TEXT NOT NULL CHECK("type" IN ('enter', 'exit', 'deposit')),
   DEFAULT: use default value
+    * "datetime" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
   NOT NULL: value is required
   UNIQUE: every row is unique value
   
+ALTER TABLE "<tablename>" RENAME TO "<newname>";
+ALTER TABLE "..." ADD COLUMN "...";
+RENAME COLUMN
+DROP COLUMN
