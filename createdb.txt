@@ -61,3 +61,7 @@ ALTER TABLE "<tablename>" RENAME TO "<newname>";
 ALTER TABLE "..." ADD COLUMN "...";
 RENAME COLUMN
 DROP COLUMN
+
+INSERT INTO "<tablename>" ("column1", "column2"...) VALUES (value1, value2...);
+or you can add to all columns
+INSERT INTO "tablename" VALUES (value1, value2, ...);
