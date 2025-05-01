@@ -6,5 +6,7 @@ CRUD Operations
 
 Add New Row to a Table
   INSERT INTO <table_name> (column0, ...)
-  VALUES
-  (value0, ...)
+  VALUES (value0, ...)
+
+If Schema has PRIMARY KEY("id")
+  then "id" autoincrements if not included in INSERT INTO
