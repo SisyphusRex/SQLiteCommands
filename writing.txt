@@ -3,3 +3,8 @@ CRUD Operations
   Read
   Update
   Delete
+
+Add New Row to a Table
+  INSERT INTO <table_name> (column0, ...)
+  VALUES
+  (value0, ...)
