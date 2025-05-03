@@ -10,3 +10,10 @@ Add New Row to a Table
 
 If Schema has PRIMARY KEY("id")
   then "id" autoincrements if not included in INSERT INTO
+
+Add Multiple Rows:
+  INSERT INTO <table_name> (column0, ...)
+  VALUES 
+  (value00, value01,...),
+  (value10, value11,...),
+  ...;
