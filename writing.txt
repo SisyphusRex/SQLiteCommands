@@ -5,19 +5,27 @@ CRUD Operations
   Delete
 
 Add New Row to a Table
-  INSERT INTO <table_name> (column0, ...)
-  VALUES (value0, ...)
+  INSERT INTO "<table_name>" ("column0", ...)
+  VALUES ('value0', ...)
 
 If Schema has PRIMARY KEY("id")
   then "id" autoincrements if not included in INSERT INTO
 
 Add Multiple Rows:
-  INSERT INTO <table_name> (column0, ...)
+  INSERT INTO "<table_name>" ("column0", ...)
   VALUES 
-  (value00, value01,...),
-  (value10, value11,...),
+  ('value00', 'value01',...),
+  ('value10', 'value11',...),
   ...;
 
 Import CSV After Table Created
   .import --csv --skip 1 <file>.csv <table_name>
   skip 1 to skip first row headers
+
+Import CSV with less columns than table (no id column) and Create new primary keys
+  1. Import to temporary table
+    .import --csv <file_name>.csv temp
+  2. Insert into target table
+    INSERT INTO "<target_table>" ("column0", ...)
+    SELECT "column0", ... 
+    FROM "<temp_table_name>";
