@@ -17,3 +17,7 @@ Add Multiple Rows:
   (value00, value01,...),
   (value10, value11,...),
   ...;
+
+Import CSV After Table Created
+  .import --csv --skip 1 <file>.csv <table_name>
+  skip 1 to skip first row headers
