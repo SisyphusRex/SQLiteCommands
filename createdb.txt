@@ -13,6 +13,9 @@ Delete database:
   From command line:
     rm <database_name>.db
 
+Delete all rows from table:
+  DELETE FROM "<table_name>";
+
 SQLite3 Storage Classes:
     NULL empty value
     INTEGER whole number
