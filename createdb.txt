@@ -9,6 +9,10 @@ To create a database:
       );
     * by convention, four spaces before each column name
 
+Delete database:
+  From command line:
+    rm <database_name>.db
+
 SQLite3 Storage Classes:
     NULL empty value
     INTEGER whole number
