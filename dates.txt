@@ -1,0 +1,2 @@
+DELETE FROM "collections" WHERE "acquired" < '1909-01-01';
+  SQLITE will recognize YEAR-MO-DA format
