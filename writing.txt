@@ -49,3 +49,6 @@ Deleting Constraints:
       ON DELETE CASCADE: deletes child rows when parent row deleted
       ON DELETE SET NULL: sets foreign key value in child row to null when parent row deleted
   
+
+Updating:
+  
