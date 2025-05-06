@@ -36,9 +36,16 @@ Deleting Entries:
 Deleting Constraints:
   Foreign Key Constraint ***MUST BE TURNED ON IN DB CONNECTION: sqlite> PRAGMA foreign_keys = ON;
     Primary key of line you want to delete in one table is a foreign key in another table
-    1. Delete the line containing the foreign key reference in the other table
-      DELETE FROM "created" WHERE "artist_id" = (
-        SELECT "id" FROM "artists" WHERE "name" = 'Unidentified artist'
-      );
-    2. Then delete the line in your first table
-      DELETE FROM "artists" WHERE "name" = 'Unidentified artist';
+      1. Delete the line containing the foreign key reference in the other table
+        DELETE FROM "created" WHERE "artist_id" = (
+          SELECT "id" FROM "artists" WHERE "name" = 'Unidentified artist'
+        );
+      2. Then delete the line in your first table
+        DELETE FROM "artists" WHERE "name" = 'Unidentified artist';
+    Change Table Schema to account for deletion
+      FOREIGN KEY("artist_id") REFERENCES "artists"("id")
+      ON DELETE RESTRICT  <--- does not allow deletion, restriction enforced immediately
+      ON DELETE NO ACTION   <--- restriction is enforced at end of transaction (so delete can happen if other statements resolve the foreign key restraint
+      ON DELETE CASCADE: deletes child rows when parent row deleted
+      ON DELETE SET NULL: sets foreign key value in child row to null when parent row deleted
+  
