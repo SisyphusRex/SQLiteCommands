@@ -8,6 +8,9 @@ To create a database:
            FOREIGN KEY("<column2>") REFERENCES "<table2>"("pk"),
       );
     * by convention, four spaces before each column name
+  3. Or import
+  4. ENFORCE FOREIGN KEY RESTRAINTS
+    PRAGMA foreign_keys = ON;
 
 Delete database:
   From command line:
