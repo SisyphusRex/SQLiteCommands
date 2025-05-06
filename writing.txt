@@ -34,7 +34,7 @@ Deleting Entries:
   DELETE FROM "<table>" WHERE "<condition>";
 
 Deleting Constraints:
-  Foreign Key Constraint
+  Foreign Key Constraint ***MUST BE TURNED ON IN DB CONNECTION: sqlite> PRAGMA foreign_keys = ON;
     Primary key of line you want to delete in one table is a foreign key in another table
     1. Delete the line containing the foreign key reference in the other table
       DELETE FROM "created" WHERE "artist_id" = (
