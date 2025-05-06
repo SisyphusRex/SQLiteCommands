@@ -29,3 +29,6 @@ Import CSV with less columns than table (no id column) and Create new primary ke
     INSERT INTO "<target_table>" ("column0", ...)
     SELECT "column0", ... 
     FROM "<temp_table_name>";
+
+Deleting Entries:
+  DELETE FROM "<table>" WHERE "<condition>";
