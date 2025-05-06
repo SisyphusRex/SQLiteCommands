@@ -32,3 +32,13 @@ Import CSV with less columns than table (no id column) and Create new primary ke
 
 Deleting Entries:
   DELETE FROM "<table>" WHERE "<condition>";
+
+Deleting Constraints:
+  Foreign Key Constraint
+    Primary key of line you want to delete in one table is a foreign key in another table
+    1. Delete the line containing the foreign key reference in the other table
+      DELETE FROM "created" WHERE "artist_id" = (
+        SELECT "id" FROM "artists" WHERE "name" = 'Unidentified artist'
+      );
+    2. Then delete the line in your first table
+      DELETE FROM "artists" WHERE "name" = 'Unidentified artist';
