@@ -71,3 +71,12 @@ trim()
 upper()
   Convert strings to all uppercase: upper("<column>")
     UPDATE "votes" SET "title" = upper("title");
+
+Triggers
+  SQL command runs when another transaction is completed.
+    CREATE TRIGGER <name>
+    BEFORE DELETE ON "<table>"  <--- can be before or after, Delete or update
+    FOR EACH ROW   <---- runs for each affected row
+    BEGIN
+      <statement to execute>;
+    END;
