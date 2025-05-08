@@ -63,3 +63,6 @@ Updating:
 UPDATE "table"
 SET "column0" = value0, column1 = value1, ...
 WHERE <condition>;
+
+Remove leading and trailing whitespace: trim("<column>")
+  UPDATE "votes" SET "title" = trim("title");
