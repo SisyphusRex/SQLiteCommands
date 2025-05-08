@@ -54,6 +54,8 @@ INTERSECT, UNION, EXCEPT
 GROUP BY
   creates groups based on parameter/id
   SELECT "book_id", AVG("rating") FROM "ratings" GROUP BY "book_id";
+  * Count occurrence of title in list, show title and count:
+  SELECT "title", COUNT("title") FROM "votes" GROUP BY "title";
 HAVING
   like WHERE but for groups
 
