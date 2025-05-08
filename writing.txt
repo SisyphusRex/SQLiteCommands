@@ -93,6 +93,7 @@ Triggers
 Soft Delete
   Add "deleted" column inside table with default 0
   Either use ALTER TABLE statement or include "deleted" INTEGER DEFAULT 0 in schema
+    ALTER TABLE "collections" ADD COLUMN "deleted" INTEGER DEFAULT 0;
   Then, just update "deleted" column
   UPDATE "collections" SET "deleted" = 1
   WHERE "title" = 'whatever the title is';
