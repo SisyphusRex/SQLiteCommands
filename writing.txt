@@ -89,3 +89,10 @@ Triggers
   Put all triggers in a separate file, triggers.sql.  
     After .read schema.sql, .read triggers.sql
     Loads triggers into schema
+
+Soft Delete
+  Add "deleted" column inside table with default 0
+  Either use ALTER TABLE statement or include "deleted" INTEGER DEFAULT 0 in schema
+  Then, just update "deleted" column
+  UPDATE "collections" SET "deleted" = 1
+  WHERE "title" = 'whatever the title is';
