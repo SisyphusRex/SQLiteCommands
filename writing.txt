@@ -79,8 +79,10 @@ Triggers
     FOR EACH ROW   <---- runs for each affected row
     BEGIN
       INSERT INTO "<table>" ("<column0>", "<column1>")
-      VALUES (OLD.
+      VALUES (OLD."<column0>", 'value1')
     END;
+  OLD is keyword access to row just deleted
+  NEW is keyword access to row just added
   Put all triggers in a separate file, triggers.sql.  
     After .read schema.sql, .read triggers.sql
     Loads triggers into schema
