@@ -83,6 +83,9 @@ Triggers
     END;
   OLD is keyword access to row just deleted
   NEW is keyword access to row just added
+
+  CREATE TRIGGER will add it to schema
+  **OR
   Put all triggers in a separate file, triggers.sql.  
     After .read schema.sql, .read triggers.sql
     Loads triggers into schema
