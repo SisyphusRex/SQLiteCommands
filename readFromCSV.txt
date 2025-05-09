@@ -1,0 +1,1 @@
+When reading from a CSV into db, you should take these steps:
