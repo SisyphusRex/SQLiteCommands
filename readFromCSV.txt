@@ -1,1 +1,11 @@
-When reading from a CSV into db, you should take these steps:
+Import CSV After Table Created
+  .import --csv --skip 1 <file>.csv <table_name>
+  skip 1 to skip first row headers
+
+Import CSV with less columns than table (no id column) and Create new primary keys
+  1. Import to temporary table
+    .import --csv <file_name>.csv temp
+  2. Insert into target table
+    INSERT INTO "<target_table>" ("column0", ...)
+    SELECT "column0", ... 
+    FROM "<temp_table_name>";
