@@ -12,6 +12,9 @@ To create a database:
   4. ENFORCE FOREIGN KEY RESTRAINTS
     PRAGMA foreign_keys = ON;
 
+Create Useing cat:
+  cat import.sql | sqlite3 my_database.db
+
 Delete database:
   From command line:
     rm <database_name>.db
