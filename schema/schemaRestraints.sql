@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS "artists";
 DROP TABLE IF EXISTS "created";
 
 -- Creates new tables and add data
-CREATE TABLE "collections" IF NOT EXISTS (
+CREATE TABLE IF NOT EXISTS "collections" (
     "id" INTEGER,
     "title" TEXT NOT NULL,
     "accession_number" TEXT NOT NULL UNIQUE,
@@ -22,7 +22,7 @@ VALUES
 ('Profusion of flowers', '56.257', '1956-04-12'),
 ('Spring outing', '14.76', '1914-01-08');
 
-CREATE TABLE "artists" IF NOT EXISTS (
+CREATE TABLE IF NOT EXISTS "artists" (
     "id" INTEGER,
     "name" TEXT NOT NULL,
     PRIMARY KEY("id")
@@ -35,7 +35,7 @@ VALUES
 ('Unidentified artist'),
 ('Zhou Chen');
 
-CREATE TABLE "created" IF NOT EXISTS (
+CREATE TABLE IF NOT EXISTS "created" (
     "artist_id" INTEGER,
     "collection_id" INTEGER,
     PRIMARY KEY("artist_id", "collection_id"),
