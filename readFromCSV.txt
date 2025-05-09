@@ -11,3 +11,9 @@ Import CSV with less columns than table (no id column) and Create new primary ke
     INSERT INTO "<target_table>" ("column0", ...)
     SELECT "column0", ... 
     FROM "<temp_table_name>";
+
+Use SCHEMA to Create Table and Import
+  Create the table with appropriate columns
+    CREATE TABLE "temp" (...
+  Import CSV command inside schema after table
+    .import --csv --skip 1 my.csv temp
