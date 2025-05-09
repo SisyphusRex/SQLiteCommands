@@ -1,10 +1,12 @@
 Import CSV After Table Created
   .import --csv --skip 1 <file>.csv <table_name>
   skip 1 to skip first row headers
+  ** BE SURE TO SET UP SCHEMA BEFORE HAND SO THAT DATA WILL FIT INTO COLUMNS
 
 Import CSV with less columns than table (no id column) and Create new primary keys
   1. Import to temporary table
     .import --csv <file_name>.csv temp
+    ** TABLE WILL BE CREATED TO FIT CSV DATA AND HEADERS
   2. Insert into target table
     INSERT INTO "<target_table>" ("column0", ...)
     SELECT "column0", ... 
