@@ -14,6 +14,7 @@ To create a database:
 
 Create Useing cat:
   cat import.sql | sqlite3 my_database.db
+    cat returns data from import.sql, and | (pipe) treats them as statements to run on database
 
 Delete database:
   From command line:
