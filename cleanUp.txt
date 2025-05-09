@@ -1,1 +1,11 @@
+UPDATE "table"
+SET "column0" = value0, column1 = value1, ...
+WHERE <condition>;
 
+trim()
+  Remove leading and trailing whitespace: trim("<column>")
+    UPDATE "votes" SET "title" = trim("title");
+
+upper()
+  Convert strings to all uppercase: upper("<column>")
+    UPDATE "votes" SET "title" = upper("title");
