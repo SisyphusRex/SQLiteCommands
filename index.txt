@@ -1,0 +1,4 @@
+CREATE INDEX
+  Like the index at the back of a book: look up topic, find pages pertaining to topic
+
+CREATE INDEX "<index_name>" ON "<table_name>" (column0,...);
