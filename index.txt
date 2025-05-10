@@ -1,4 +1,5 @@
 CREATE INDEX
   Like the index at the back of a book: look up topic, find pages pertaining to topic
+  the column choice is the attribute that you will often query by
 
 CREATE INDEX "<index_name>" ON "<table_name>" (column0,...);
