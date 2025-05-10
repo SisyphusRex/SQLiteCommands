@@ -1,0 +1,13 @@
+Hacker can abuse application input that makes SQL query:
+
+For example, Login with username and password inputs
+SQL query to find user is:
+SELECT * FROM "users"
+WHERE "username" = '<input_string>' AND "password" = '<input_string>';
+
+If hacker inputs hacker'-- as password, then query is
+SELECT * from "users"
+WHERE "username" = 'hacker'--' AND "password" = '<whatever>';
+
+You can see that the query string is truncated and -- means ignore any statements after this.
+This bypasses the password check.
