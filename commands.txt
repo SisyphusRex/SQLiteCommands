@@ -167,3 +167,5 @@ DISTINCT
     SELECT COUNT(DISTINCT "translator") FROM "longlist";
     SELECT DISTINCT "publisher" FROM "longlist";
 
+Association/Join Table
+    Table made of Foreign Keys and no primary key.  Associates elements of one table to elements of another
