@@ -12,7 +12,7 @@ Primary Key
 Foreign Key
   take primary key of one table and use inside of another table
 
-Join Table
+Join Table/Association Table
   Author Table
     PK: author_id
   Books Table
