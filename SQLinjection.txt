@@ -11,3 +11,7 @@ WHERE "username" = 'hacker'--' AND "password" = '<whatever>';
 
 You can see that the query string is truncated and -- means ignore any statements after this.
 This bypasses the password check.
+
+Protect against:
+  Use escape characters to make SQL treat input text literally
+  if character is ' or ", then translated to \' or \"
