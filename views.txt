@@ -6,3 +6,5 @@ View
     Partition (divide into logical pieces)
     Secure (hide columns)
 
+CREATE VIEW <view_name> AS
+SELECT ...;
