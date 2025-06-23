@@ -2,7 +2,7 @@ View
   A virtual table defined by a query
   Why?
     Simplify (remove unnecessary columns)
-    Aggregate (sum up values...)
+    Aggregate (perform function on set of values, or group into set)
     Partition (divide into logical pieces)
     Secure (hide columns)
 
