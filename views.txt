@@ -9,3 +9,6 @@ View
 CREATE VIEW "<view_name>" AS
 SELECT ...;
   - this saves the view and is part of the schema
+
+DROP VIEW "<name>";
+  - deletes the view
