@@ -1,1 +1,8 @@
-Create Views
+View
+  A virtual table defined by a query
+  Why?
+    Simplify (remove unnecessary columns)
+    Aggregate (sum up values...)
+    Partition (divide into logical pieces)
+    Secure (hide columns)
+
