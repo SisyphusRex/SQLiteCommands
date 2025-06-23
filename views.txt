@@ -12,3 +12,7 @@ SELECT ...;
 
 DROP VIEW "<name>";
   - deletes the view
+
+CREATE TEMPORARY VIEW "<view_name>" AS
+SELECT ...;
+  - view disappears after db connection ended
