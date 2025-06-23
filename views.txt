@@ -6,6 +6,6 @@ View
     Partition (divide into logical pieces)
     Secure (hide columns)
 
-CREATE VIEW <view_name> AS
+CREATE VIEW "<view_name>" AS
 SELECT ...;
   - this saves the view and is part of the schema
