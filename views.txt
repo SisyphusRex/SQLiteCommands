@@ -23,3 +23,8 @@ CTE Common Table Expression
       SELECT ...
     ),
     SELECT ... FROM "<name>";
+
+Mask Column Data:
+  Either omit the column from SELECT ...
+  or 
+  SELECT 'Anonymous' AS "rider" FROM "rides";
