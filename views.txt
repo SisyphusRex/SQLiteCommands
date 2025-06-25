@@ -28,3 +28,12 @@ Mask Column Data:
   Either omit the column from SELECT ...
   or 
   SELECT 'Anonymous' AS "rider" FROM "rides";
+
+Trigger for View
+  CREATE TRIGGER "delete"
+  INSTEAD OF DELETE ON "<view>"
+  FOR EACH ROW
+  BEGIN
+    UPDATE "<table>" SET "deleted" = 1
+    WHERE "id" = OLD."id";
+  END;
