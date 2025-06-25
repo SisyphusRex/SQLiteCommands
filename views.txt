@@ -16,3 +16,10 @@ DROP VIEW "<name>";
 CREATE TEMPORARY VIEW "<view_name>" AS
 SELECT ...;
   - view disappears after db connection ended
+
+CTE Common Table Expression
+  View that exists for a single query
+    WITH "<name>" AS (
+      SELECT ...
+    ),
+    SELECT ... FROM "<name>";
