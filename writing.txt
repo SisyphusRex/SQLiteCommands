@@ -79,7 +79,7 @@ Triggers
     FOR EACH ROW   <---- runs for each affected row
     BEGIN
       INSERT INTO "<table>" ("<column0>", "<column1>")
-      VALUES (OLD."<column0>", 'value1')
+      VALUES (OLD."<column0>", 'value1');
     END;
   OLD is keyword access to row just deleted
   NEW is keyword access to row just added
