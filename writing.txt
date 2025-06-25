@@ -98,3 +98,12 @@ Soft Delete
     UPDATE "collections" SET "deleted" = 1
     WHERE "title" = 'whatever the title is';
   SELECT * FROM "collections" WHERE "deleted" != 1;
+
+Trigger for View
+  CREATE TRIGGER "delete"
+  INSTEAD OF DELETE ON "<view>"
+  FOR EACH ROW
+  BEGIN
+    UPDATE "<table>" SET "deleted" = 1
+    WHERE "id" = OLD."id";
+  END;
