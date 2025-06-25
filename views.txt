@@ -3,7 +3,7 @@ View
   Why?
     Simplify (remove unnecessary columns)
     Aggregate (perform function on set of values, or group into set)
-    Partition (divide into logical pieces)
+    Partition (divide data into logical pieces)
     Secure (hide columns)
 
 CREATE VIEW "<view_name>" AS
