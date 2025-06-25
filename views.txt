@@ -4,7 +4,7 @@ View
     Simplify (remove unnecessary columns)
     Aggregate (perform function on set of values, or group into set)
     Partition (divide data into logical pieces)
-    Secure (hide columns)
+    Secure (hide columns, keep data from being modified)
 
 CREATE VIEW "<view_name>" AS
 SELECT ...;
