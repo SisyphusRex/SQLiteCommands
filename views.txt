@@ -29,7 +29,7 @@ Mask Column Data:
   or 
   SELECT 'Anonymous' AS "rider" FROM "rides";
 
-Trigger for View
+Trigger delete for View
   CREATE TRIGGER "delete"
   INSTEAD OF DELETE ON "<view>"
   FOR EACH ROW
