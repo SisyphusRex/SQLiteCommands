@@ -64,6 +64,9 @@ UPDATE "table"
 SET "column0" = value0, column1 = value1, ...
 WHERE <condition>;
 
+Mass Updating a column with different value for each row:  
+  I just created a new table.
+
 trim()
   Remove leading and trailing whitespace: trim("<column>")
     UPDATE "votes" SET "title" = trim("title");
