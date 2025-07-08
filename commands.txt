@@ -137,6 +137,8 @@ ORDER BY
 Sub Ordering:
     when a tie, order by different attribute
     SELECT "title", "rating", "votes" FROM "longlist" ORDER BY "rating" DESC, "votes" DESC LIMIT 10;
+Alphabetical Ordering:
+    sql converts letters to ASCII values, so A is smaller than Z, thus alphabetical is ASC
 
 AVG
     SELECT AVG("rating") FROM "longlist";
